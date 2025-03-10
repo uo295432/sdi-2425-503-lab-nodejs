@@ -10,6 +10,13 @@ module.exports = function (app) {
         res.send(response);
     });
 
+    app.post('/songs/add',function(req,res){
+        let response="Canción agregada: "+req.body.title + "<br>"
+            + "género: " +req.body.kind + "<br>"
+            + "precio: " +req.body.price;
+        res.send(response);
+    });
+
     app.get('/add', function(req, res) {
         let response = parseInt(req.query.num1) + parseInt(req.query.num2);
         res.send(String(response));
@@ -24,4 +31,12 @@ module.exports = function (app) {
             + 'Tipo de música: ' + req.params.kind;
         res.send(response);
     });
+
+    app.get('/promo*', function (req, res) {
+        res.send('Respuesta al patrón promo*');
+    });
+    app.get('/pro*ar', function (req, res) {
+        res.send('Respuesta al patrón pro*ar');
+    });
+
 };
