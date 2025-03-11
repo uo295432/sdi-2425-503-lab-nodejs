@@ -1,6 +1,21 @@
 module.exports = function (app) {
     app.get('/authors/add', function (req, res) {
-        res.render("authors/add.twig");
+        let rols=[{
+            "name":"Cantante"
+        },{
+            "name":"Trompetista"
+        },{
+            "name":"Violinista"
+        },{
+            "name":"Saxofonista"
+        },{
+            "name":"Pianista"
+        }];
+        let response={
+            seller:'Roles',
+            rols:rols
+        };
+        res.render("authors/add.twig",response);
     });
 
     app.post('/authors/add',function(req,res){
