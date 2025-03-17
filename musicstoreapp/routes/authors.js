@@ -10,6 +10,8 @@ module.exports = function (app) {
             "name":"Saxofonista"
         },{
             "name":"Pianista"
+        },{
+            "name":"DJ"
         }];
         let response={
             seller:'Roles',
@@ -38,26 +40,37 @@ module.exports = function (app) {
         res.send(response);
     });
 
-    app.get('/authors', function (req, res){
-        let authors=[{
-            "name":"Kurt",
-            "group":"Nirvana",
-            "rol":"Cantante"
-        },{
-            "name":"Eazy-E",
-            "group":"NWA",
-            "rol":"Rapero"
-        },{
-            "name":"Dr Dre",
-            "group":"NWA",
-            "rol":"DJ"
-        }];
+    let authors=[{
+        "name":"Kurt",
+        "group":"Nirvana",
+        "rol":"Cantante"
+    },{
+        "name":"Eazy-E",
+        "group":"NWA",
+        "rol":"Rapero"
+    },{
+        "name":"Dr Dre",
+        "group":"NWA",
+        "rol":"DJ"
+    }];
 
+    app.get('/authors', function (req, res){
         let response={
             seller:'Autores',
             authors:authors
         };
         res.render("authors/authors.twig",response);
+    });
+
+    app.get('/authors/filter/:rol', function (req, res) {
+        let rol = req.params.rol;
+        let filtrados = authors.filter(author => author.rol.toLowerCase() === rol.toLowerCase());
+
+        let response = {
+            seller: 'Autores filtrados por ' + rol,
+            authors: filtrados
+        };
+        res.render("authors/authors.twig", response);
     });
 
     app.get('/aut*', function (req, res) {
