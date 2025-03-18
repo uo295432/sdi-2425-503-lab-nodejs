@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a840a70-d449-49f2-961d-5067d757e987" name="Changes" comment="SDI-2425-503-9.4-Registro de usuario, autenticación y uso de sesión.">
+    <list default="true" id="4a840a70-d449-49f2-961d-5067d757e987" name="Changes" comment="SDI-2425-503-9.5-Colecciones relacionadas y routers.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/musicstoreapp/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicstoreapp/public/publication.html" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/views/publications.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicstoreapp/public/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/views/songs/edit.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicstoreapp/repositories/songsRepository.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/repositories/songsRepository.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicstoreapp/routes/songs.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/routes/songs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/views/shop.twig" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/views/shop.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +24,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -58,7 +62,7 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "Node.js.hello-world-server.js.executor": "Debug",
-    "Node.js.www.executor": "Run",
+    "Node.js.www.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -130,7 +134,8 @@
       <updated>1741602382411</updated>
       <workItem from="1741602383557" duration="9797000" />
       <workItem from="1742206567700" duration="1697000" />
-      <workItem from="1742208290564" duration="12777000" />
+      <workItem from="1742208290564" duration="13005000" />
+      <workItem from="1742285200349" duration="6371000" />
     </task>
     <task id="LOCAL-00001" summary="SDI-2425-503-8.1-Creación del proyecto Tienda Virtual.">
       <option name="closed" value="true" />
@@ -220,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742220594963</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="SDI-2425-503-9.5-Colecciones relacionadas y routers.">
+      <option name="closed" value="true" />
+      <created>1742228006639</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1742228006639</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +251,19 @@
     <MESSAGE value="SDI-2425-503-9.3-Subida a ficheros y gestión de colecciones." />
     <MESSAGE value="SDI-2425-503-9.3-Subida a ficheros y gestión de colecciones.(Más fichero song.twig)" />
     <MESSAGE value="SDI-2425-503-9.4-Registro de usuario, autenticación y uso de sesión." />
-    <option name="LAST_COMMIT_MESSAGE" value="SDI-2425-503-9.4-Registro de usuario, autenticación y uso de sesión." />
+    <MESSAGE value="SDI-2425-503-9.5-Colecciones relacionadas y routers." />
+    <option name="LAST_COMMIT_MESSAGE" value="SDI-2425-503-9.5-Colecciones relacionadas y routers." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/musicstoreapp/repositories/favoriteSongsRepository.js</url>
+          <line>38</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

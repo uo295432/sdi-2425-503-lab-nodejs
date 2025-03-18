@@ -40,12 +40,14 @@ const connectionStrings = "mongodb+srv://admin:sdi@musicstoreapp.hm8d9.mongodb.n
 const dbClient = new MongoClient(connectionStrings);
 let songsRepository = require("./repositories/songsRepository.js");
 songsRepository.init(app, dbClient);
+let favoritesRepository = require("./repositories/favoriteSongsRepository.js");
+favoritesRepository.init(app, dbClient);
 //app.set('connectionStrings', url)
 
 const usersRepository = require("./repositories/usersRepository.js");
 usersRepository.init(app, dbClient);
 require("./routes/users.js")(app, usersRepository);
-
+require("./routes/songs/favorites.js")(app,favoritesRepository);
 require("./routes/songs.js")(app,songsRepository);
 require("./routes/authors.js")(app);
 

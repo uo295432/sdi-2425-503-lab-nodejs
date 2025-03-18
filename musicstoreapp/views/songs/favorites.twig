@@ -1,0 +1,35 @@
+{% extends "layout.twig" %}
+{% block title %} Mis favoritos {% endblock %}
+{% block main_container %}
+    <h2>Mis favoritos</h2>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Genero</th>
+                <th>Autor</th>
+                <th class="col-md-1"></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for song in songs %}
+                <tr>
+                    <td>{{ song.title }}</td>
+                    <td>{{ song.price }}</td>
+                    <td>{{ song.kind }}</td>
+                    <td>{{ song.author }}</td>
+                    <td>
+                        <a href="/songs/favorites/delete/{{ song._id }}">Eliminar</a> <br>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <!-- Div para mostrar el precio total -->
+    <div class="total-price">
+        <h4>Precio Total: {{ totalPrice | number_format(2, '.', ',') }} €</h4>
+    </div>
+{% endblock %}
