@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a840a70-d449-49f2-961d-5067d757e987" name="Changes" comment="SDI-2425-503-10.2-Redirección de peticiones.">
+    <list default="true" id="4a840a70-d449-49f2-961d-5067d757e987" name="Changes" comment="SDI-2425-503-10.3-Mensajes y alertas.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicstoreapp/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/public/buy.html" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/views/purchases.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/repositories/songsRepository.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/repositories/songsRepository.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/routes/songs.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/routes/songs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/routes/userAudiosRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/routes/userAudiosRouter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/musicstoreapp/views/layout.twig" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/views/layout.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/views/songs/song.twig" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/views/songs/song.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,8 +91,8 @@
       <recent name="C:\Users\oscar\OneDrive\Escritorio\sdi-2425-503-lab-nodejs\musicstoreapp\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\oscar\OneDrive\Escritorio\complementario nodejs\sdi-2425-503-lab-nodejs\musicstoreapp\views\songs" />
       <recent name="C:\Users\oscar\OneDrive\Escritorio\complementario nodejs\sdi-2425-503-lab-nodejs\musicstoreapp\views" />
+      <recent name="C:\Users\oscar\OneDrive\Escritorio\complementario nodejs\sdi-2425-503-lab-nodejs\musicstoreapp\views\songs" />
       <recent name="C:\Users\oscar\OneDrive\Escritorio\sdi-2425-503-lab-nodejs\musicstoreapp\views" />
     </key>
   </component>
@@ -136,7 +141,7 @@
       <workItem from="1742206567700" duration="1697000" />
       <workItem from="1742208290564" duration="13005000" />
       <workItem from="1742285200349" duration="6859000" />
-      <workItem from="1742810824405" duration="2955000" />
+      <workItem from="1742810824405" duration="3924000" />
     </task>
     <task id="LOCAL-00001" summary="SDI-2425-503-8.1-Creación del proyecto Tienda Virtual.">
       <option name="closed" value="true" />
@@ -258,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742813147420</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="SDI-2425-503-10.3-Mensajes y alertas.">
+      <option name="closed" value="true" />
+      <created>1742814015148</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1742814015148</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +293,7 @@
     <MESSAGE value="SDI-2425-503-9-ejercicio-complementario1" />
     <MESSAGE value="SDI-2425-503--10.1-Gestión de colecciones, eliminar documento." />
     <MESSAGE value="SDI-2425-503-10.2-Redirección de peticiones." />
-    <option name="LAST_COMMIT_MESSAGE" value="SDI-2425-503-10.2-Redirección de peticiones." />
+    <MESSAGE value="SDI-2425-503-10.3-Mensajes y alertas." />
+    <option name="LAST_COMMIT_MESSAGE" value="SDI-2425-503-10.3-Mensajes y alertas." />
   </component>
 </project>
