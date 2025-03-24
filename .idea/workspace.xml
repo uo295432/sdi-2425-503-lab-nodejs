@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a840a70-d449-49f2-961d-5067d757e987" name="Changes" comment="SDI-2425-503-9-ejercicio-complementario1">
+    <list default="true" id="4a840a70-d449-49f2-961d-5067d757e987" name="Changes" comment="SDI-2425-503--10.1-Gestión de colecciones, eliminar documento.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicstoreapp/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicstoreapp/repositories/songsRepository.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/repositories/songsRepository.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/musicstoreapp/routes/songs.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/routes/songs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/views/layout.twig" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/views/layout.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +138,7 @@
       <workItem from="1742206567700" duration="1697000" />
       <workItem from="1742208290564" duration="13005000" />
       <workItem from="1742285200349" duration="6859000" />
-      <workItem from="1742810824405" duration="962000" />
+      <workItem from="1742810824405" duration="2153000" />
     </task>
     <task id="LOCAL-00001" summary="SDI-2425-503-8.1-Creación del proyecto Tienda Virtual.">
       <option name="closed" value="true" />
@@ -243,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742292000393</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="SDI-2425-503--10.1-Gestión de colecciones, eliminar documento.">
+      <option name="closed" value="true" />
+      <created>1742812064659</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1742812064659</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +272,7 @@
     <MESSAGE value="SDI-2425-503-9.4-Registro de usuario, autenticación y uso de sesión." />
     <MESSAGE value="SDI-2425-503-9.5-Colecciones relacionadas y routers." />
     <MESSAGE value="SDI-2425-503-9-ejercicio-complementario1" />
-    <option name="LAST_COMMIT_MESSAGE" value="SDI-2425-503-9-ejercicio-complementario1" />
+    <MESSAGE value="SDI-2425-503--10.1-Gestión de colecciones, eliminar documento." />
+    <option name="LAST_COMMIT_MESSAGE" value="SDI-2425-503--10.1-Gestión de colecciones, eliminar documento." />
   </component>
 </project>
