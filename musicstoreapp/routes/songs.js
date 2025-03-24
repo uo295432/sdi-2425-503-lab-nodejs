@@ -101,6 +101,20 @@ module.exports = function (app,songsRepository) {
         };
         res.render("shop.twig",response);
     });
+
+    app.get('/songs/delete/:id', function (req, res) {
+        let filter = {_id: new ObjectId(req.params.id)};
+        songsRepository.deleteSong(filter, {}).then(result => {
+            if (result === null || result.deletedCount === 0) {
+                res.send("No se ha podido eliminar el registro");
+            } else {
+                res.redirect("/publications");
+            }
+        }).catch(error => {
+            res.send("Se ha producido un error al intentar eliminar la canción: " + error)
+        });
+    });
+
     app.get('/publications', function (req, res) {
         let filter = {author : req.session.user};
         let options = {sort: {title: 1}};
