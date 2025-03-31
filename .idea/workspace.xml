@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a840a70-d449-49f2-961d-5067d757e987" name="Changes" comment="SDI-2425-503-11.4-SW Cliente JQuery + AJAX (Ampliaciones)">
+    <list default="true" id="4a840a70-d449-49f2-961d-5067d757e987" name="Changes" comment="SDI-2425-503-11.5-SW Consumir SW desde Node.js.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicstoreapp/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicstoreapp/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicstoreapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicstoreapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicstoreapp/routes/songs.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/routes/songs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicstoreapp/views/songs/song.twig" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/views/songs/song.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello-world-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/hello-world-server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +62,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
-    "Node.js.hello-world-server.js.executor": "Debug",
+    "Node.js.hello-world-server.js.executor": "Run",
     "Node.js.www.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -97,7 +94,7 @@
       <recent name="C:\Users\oscar\OneDrive\Escritorio\sdi-2425-503-lab-nodejs\musicstoreapp\views" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.www">
+  <component name="RunManager" selected="Node.js.hello-world-server.js">
     <configuration name="hello-world-server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/hello-world-server.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -116,9 +113,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.hello-world-server.js" />
         <item itemvalue="Node.js.www" />
         <item itemvalue="npm.start" />
-        <item itemvalue="Node.js.hello-world-server.js" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +142,7 @@
       <workItem from="1742810824405" duration="6184000" />
       <workItem from="1742890198677" duration="5597000" />
       <workItem from="1743180067156" duration="140000" />
-      <workItem from="1743412268476" duration="13836000" />
+      <workItem from="1743412268476" duration="14738000" />
     </task>
     <task id="LOCAL-00001" summary="SDI-2425-503-8.1-Creación del proyecto Tienda Virtual.">
       <option name="closed" value="true" />
@@ -339,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743434005284</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="SDI-2425-503-11.5-SW Consumir SW desde Node.js.">
+      <option name="closed" value="true" />
+      <created>1743436841084</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1743436841084</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +375,8 @@
     <MESSAGE value="SDI-2425-503-11.2-SW API REST Autenticación." />
     <MESSAGE value="SDI-2425-503-11.3-SW Cliente JQuery + AJAX." />
     <MESSAGE value="SDI-2425-503-11.4-SW Cliente JQuery + AJAX (Ampliaciones)" />
-    <option name="LAST_COMMIT_MESSAGE" value="SDI-2425-503-11.4-SW Cliente JQuery + AJAX (Ampliaciones)" />
+    <MESSAGE value="SDI-2425-503-11.5-SW Consumir SW desde Node.js." />
+    <option name="LAST_COMMIT_MESSAGE" value="SDI-2425-503-11.5-SW Consumir SW desde Node.js." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
