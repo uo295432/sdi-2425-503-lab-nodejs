@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a840a70-d449-49f2-961d-5067d757e987" name="Changes" comment="SDI-2425-503-11.2-SW API REST Autenticación.">
+    <list default="true" id="4a840a70-d449-49f2-961d-5067d757e987" name="Changes" comment="SDI-2425-503-11.3-SW Cliente JQuery + AJAX.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicstoreapp/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicstoreapp/public/add.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicstoreapp/public/song.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/public/apiclient/client.html" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/public/apiclient/client.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/public/apiclient/widget-login.html" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/public/apiclient/widget-login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/public/apiclient/widget-songs.html" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/public/apiclient/widget-songs.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +88,7 @@
       <recent name="C:\Users\oscar\OneDrive\Escritorio\sdi-2425-503-lab-nodejs\musicstoreapp\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\oscar\OneDrive\Escritorio\complementario nodejs\sdi-2425-503-lab-nodejs\musicstoreapp\public\javascripts" />
       <recent name="C:\Users\oscar\OneDrive\Escritorio\complementario nodejs\sdi-2425-503-lab-nodejs\musicstoreapp\views" />
       <recent name="C:\Users\oscar\OneDrive\Escritorio\complementario nodejs\sdi-2425-503-lab-nodejs\musicstoreapp\views\songs" />
       <recent name="C:\Users\oscar\OneDrive\Escritorio\sdi-2425-503-lab-nodejs\musicstoreapp\views" />
@@ -141,7 +142,7 @@
       <workItem from="1742810824405" duration="6184000" />
       <workItem from="1742890198677" duration="5597000" />
       <workItem from="1743180067156" duration="140000" />
-      <workItem from="1743412268476" duration="10918000" />
+      <workItem from="1743412268476" duration="12680000" />
     </task>
     <task id="LOCAL-00001" summary="SDI-2425-503-8.1-Creación del proyecto Tienda Virtual.">
       <option name="closed" value="true" />
@@ -319,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743428549887</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="SDI-2425-503-11.3-SW Cliente JQuery + AJAX.">
+      <option name="closed" value="true" />
+      <created>1743432452864</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1743432452864</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +357,8 @@
     <MESSAGE value="SDI-2425-503-sesión10-ejercicio-complementario1" />
     <MESSAGE value="SDI-2425-503-11.1-SW API REST CRUD Canciones." />
     <MESSAGE value="SDI-2425-503-11.2-SW API REST Autenticación." />
-    <option name="LAST_COMMIT_MESSAGE" value="SDI-2425-503-11.2-SW API REST Autenticación." />
+    <MESSAGE value="SDI-2425-503-11.3-SW Cliente JQuery + AJAX." />
+    <option name="LAST_COMMIT_MESSAGE" value="SDI-2425-503-11.3-SW Cliente JQuery + AJAX." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
