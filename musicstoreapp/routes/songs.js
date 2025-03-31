@@ -52,32 +52,80 @@ module.exports = function (app,songsRepository) {
         let response = parseInt(req.query.num1) + parseInt(req.query.num2);
         res.send(String(response));
     });
-
     app.get('/songs/:id', function (req, res) {
         let songId = new ObjectId(req.params.id);
         let filter = {_id: songId};
         let options = {};
+
         songsRepository.findSong(filter, options).then(song => {
             if (song == null) {
                 res.send("Canción no encontrada");
-            } else if (song.author === req.session.user) {
-                res.render("songs/song.twig", {song: song, canPlay: true});
             } else {
-                let filter = {
-                    user: req.session.user,
-                    song_id: songId
+                // Llamada a la API de cambio de divisa
+                let settings = {
+                    url: "https://api.currencyapi.com/v3/latest?apikey=cur_live_NTIWFxnnMRWh7etH66WK6QhEIYqU9NU5KkcHUeFw&base_currency=EUR&currencies=USD",
+                    method: "get",
                 };
-                songsRepository.getPurchases(filter, {}).then(purchases => {
-                    let canPlay = purchases.length > 0;
-                    res.render("songs/song.twig", {song: song, canPlay: canPlay});
-                }).catch(error => {
-                    res.send("Error al comprobar si la canción está comprada: " + error);
+                let rest = app.get("rest");
+
+                rest(settings, function (error, response, body) {
+                    if (error || response.statusCode !== 200) {
+                        console.error("Error en la API de cambio de moneda:", error);
+                        song.usd = "N/A";
+                    } else {
+                        let responseObject = JSON.parse(body);
+                        let rateUSD = responseObject.data.USD.value;
+                        let songValue = song.price / rateUSD;
+                        song.usd = Math.round(songValue * 100) / 100;
+                    }
+
+                    if (song.author === req.session.user) {
+                        res.render("songs/song.twig", {song: song, canPlay: true});
+                    } else {
+                        let purchaseFilter = {
+                            user: req.session.user,
+                            song_id: songId
+                        };
+                        songsRepository.getPurchases(purchaseFilter, {}).then(purchases => {
+                            let canPlay = purchases.length > 0;
+                            res.render("songs/song.twig", {song: song, canPlay: canPlay});
+                        }).catch(error => {
+                            res.send("Error al comprobar si la canción está comprada: " + error);
+                        });
+                    }
                 });
             }
         }).catch(error => {
-            res.send("Se ha producido un error al buscar la canción " + error)
+            res.send("Se ha producido un error al buscar la canción " + error);
         });
     });
+
+    //Método antiguo
+    // app.get('/songs/:id', function (req, res) {
+    //     let songId = new ObjectId(req.params.id);
+    //     let filter = {_id: songId};
+    //     let options = {};
+    //     songsRepository.findSong(filter, options).then(song => {
+    //         if (song == null) {
+    //             res.send("Canción no encontrada");
+    //         } else if (song.author === req.session.user) {
+    //             res.render("songs/song.twig", {song: song, canPlay: true});
+    //         } else {
+    //             let filter = {
+    //                 user: req.session.user,
+    //                 song_id: songId
+    //             };
+    //             songsRepository.getPurchases(filter, {}).then(purchases => {
+    //                 let canPlay = purchases.length > 0;
+    //                 res.render("songs/song.twig", {song: song, canPlay: canPlay});
+    //             }).catch(error => {
+    //                 res.send("Error al comprobar si la canción está comprada: " + error);
+    //             });
+    //         }
+    //     }).catch(error => {
+    //         res.send("Se ha producido un error al buscar la canción " + error)
+    //     });
+    // });
 
     app.get('/promo*', function (req, res) {
         res.send('Respuesta al patrón promo*');
