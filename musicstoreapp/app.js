@@ -55,6 +55,7 @@ usersRepository.init(app, dbClient);
 require("./routes/users.js")(app, usersRepository);
 require("./routes/songs/favorites.js")(app,favoritesRepository);
 require("./routes/songs.js")(app,songsRepository);
+require("./routes/api/songsAPIv1.0.js")(app, songsRepository);
 require("./routes/authors.js")(app);
 
 // view engine setup
