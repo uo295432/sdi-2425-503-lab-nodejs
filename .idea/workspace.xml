@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a840a70-d449-49f2-961d-5067d757e987" name="Changes" comment="SDI-2425-503-sesión10-ejercicio-complementario1">
+    <list default="true" id="4a840a70-d449-49f2-961d-5067d757e987" name="Changes" comment="SDI-2425-503-11.1-SW API REST CRUD Canciones.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/musicstoreapp/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/routes/api/songsAPIv1.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/routes/api/songsAPIv1.0.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -139,7 +143,7 @@
       <workItem from="1742810824405" duration="6184000" />
       <workItem from="1742890198677" duration="5597000" />
       <workItem from="1743180067156" duration="140000" />
-      <workItem from="1743412268476" duration="1869000" />
+      <workItem from="1743412268476" duration="8178000" />
     </task>
     <task id="LOCAL-00001" summary="SDI-2425-503-8.1-Creación del proyecto Tienda Virtual.">
       <option name="closed" value="true" />
@@ -301,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742892906121</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="SDI-2425-503-11.1-SW API REST CRUD Canciones.">
+      <option name="closed" value="true" />
+      <created>1743414190706</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1743414190706</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +340,8 @@
     <MESSAGE value="SDI-2425-503-10.5-Sistema de paginación." />
     <MESSAGE value="SDI-2425-503-10.6-Manejo de errores y HTTPS." />
     <MESSAGE value="SDI-2425-503-sesión10-ejercicio-complementario1" />
-    <option name="LAST_COMMIT_MESSAGE" value="SDI-2425-503-sesión10-ejercicio-complementario1" />
+    <MESSAGE value="SDI-2425-503-11.1-SW API REST CRUD Canciones." />
+    <option name="LAST_COMMIT_MESSAGE" value="SDI-2425-503-11.1-SW API REST CRUD Canciones." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
