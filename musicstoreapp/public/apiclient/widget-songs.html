@@ -13,6 +13,7 @@
     </thead>
     <tbody id="songsTableBody"></tbody>
   </table>
+  <div id="delete-error" style="color:red; margin-top:10px;"></div>
 </div>
 <script>
   window.history.pushState("", "", "/apiclient/client.html?w=songs");
@@ -45,6 +46,7 @@
               "<td>" + songs[i].price + "</td>" +
               "<td>" +
               "<a onclick=songDetail('" + songs[i]._id + "')>Detalles</a><br>" +
+              "<a onclick=songEdit('" + songs[i]._id + "')>Editar</a><br>" +
               "<a onclick=songDelete('" + songs[i]._id + "')>Eliminar</a>" +
               "</td>" +
               "</tr>");
@@ -56,6 +58,7 @@
     $( "#main-container" ).load( "widget-add.html");
   }
   function songDelete(_id) {
+    $("#delete-error").html("");
     $.ajax({
       url: URLbase + "/songs/" + _id,
       type: "DELETE",
@@ -66,10 +69,20 @@
         console.log("Canción eliminada: " + _id);
         $("#" + _id).remove(); // eliminar el <tr> de la canción
       },
-      error: function (error) {
-        $("#main-container").load("widget-login.html");
+      error: function (xhr) {
+        if (xhr.status === 403) {
+          $("#delete-error").html("No puedes eliminar esta canción porque no eres el autor.");
+        } else if (xhr.status === 404) {
+          $("#delete-error").html("La canción no existe.");
+        } else {
+          $("#delete-error").html("Error al intentar eliminar la canción.");
+        }
       }
     });
+  }
+  function songEdit(_id){
+    selectedSongId = _id;
+    $("#main-container").load("widget-edit.html");
   }
   function songDetail(_id) {
     selectedSongId = _id;

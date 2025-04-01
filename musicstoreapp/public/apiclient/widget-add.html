@@ -1,4 +1,4 @@
-<div id="widget-agregar" >
+<div id="widget-agregar">
   <div class="form-group">
     <label class="control-label col-sm-2" for="title-add">Nombre:</label>
     <div class="col-sm-10">
@@ -20,25 +20,49 @@
              placeholder="2.50" id="price-add" />
     </div>
   </div>
-  <div class="col-sm-offset-2 col-sm-10">
-    <button type="button" class="btn btn-primary" id="boton-add"
-            onclick="widgetAddSong()">Nueva canción</button>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div id="add-error" style="color:red; margin-bottom: 10px;"></div>
+      <button type="button" class="btn btn-primary" id="boton-add"
+              onclick="widgetAddSong()">Nueva canción</button>
+    </div>
   </div>
 </div>
+
 <script>
-  function widgetAddSong( ) {
+  function widgetAddSong() {
+    const title = $("#title-add").val().trim();
+    const kind = $("#kind-add").val().trim();
+    const price = parseFloat($("#price-add").val());
+
+    let errores = [];
+
+    if (title.length < 3) {
+      errores.push("El título debe tener al menos 3 caracteres.");
+    }
+
+    if (kind.length < 1) {
+      errores.push("El tipo de canción no puede ser null.");
+    }
+
+    if (isNaN(price) || price <= 0) {
+      errores.push("El precio debe ser un número mayor que 0.");
+    }
+
+    if (errores.length > 0) {
+      $("#add-error").html(errores.join("<br>"));
+      return;
+    }
+
+    // Si todo está bien, enviar la petición
     $.ajax({
       url: URLbase + "/songs",
       type: "POST",
-      data: {
-        title: $("#title-add").val(),
-        kind: $("#kind-add").val(),
-        price: $("#price-add").val()
-      },
+      data: { title, kind, price },
       dataType: 'json',
-      headers: {"token": token},
+      headers: { "token": token },
       success: function (response) {
-        console.log(response); // <-- Prueba
+        console.log(response);
         $("#main-container").load("widget-songs.html");
       },
       error: function (error) {
