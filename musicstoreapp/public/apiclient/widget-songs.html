@@ -13,6 +13,9 @@
     </thead>
     <tbody id="songsTableBody"></tbody>
   </table>
+  <input id="buscar-spotify" placeholder="Buscar artista">
+  <button onclick="buscarArtistas($('#buscar-spotify').val())">Buscar</button>
+  <div id="resultado-spotify"></div>
   <div id="delete-error" style="color:red; margin-top:10px;"></div>
 </div>
 <script>
@@ -114,6 +117,24 @@
       return 0;
     });
     updateSongsTable(songs);
+  }
+  function buscarArtistas(query) {
+    $.ajax({
+      url: URLbase + "/spotify/search?q=" + encodeURIComponent(query),
+      type: "GET",
+      dataType: "json",
+      success: function (artists) {
+        let html = "<h4>Artistas encontrados:</h4><ul>";
+        artists.forEach(artist => {
+          html += "<li>" + artist.name + " (Popularidad: " + artist.popularity + ")</li>";
+        });
+        html += "</ul>";
+        $("#resultado-spotify").html(html);
+      },
+      error: function () {
+        $("#resultado-spotify").html("Error al consultar artistas en Spotify");
+      }
+    });
   }
   loadSongs();
 </script>

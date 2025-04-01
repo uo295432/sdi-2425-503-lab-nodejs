@@ -10,6 +10,7 @@ app.set('rest', rest);
 let jwt = require('jsonwebtoken');
 app.set('jwt', jwt);
 let crypto = require('crypto');
+require("dotenv").config();
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -57,6 +58,9 @@ app.use("/shop/",userSessionRouter)
 const userAuthorRouter = require('./routes/userAuthorRouter');
 app.use("/songs/edit",userAuthorRouter);
 app.use("/songs/delete",userAuthorRouter);
+
+const spotifyService = require('./routes/spotifyservice');
+app.use("/api/spotify", spotifyService);
 
 const userTokenRouter = require('./routes/userTokenRouter');
 app.use("/api/v1.0/songs/", userTokenRouter);

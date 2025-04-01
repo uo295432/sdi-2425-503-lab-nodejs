@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a840a70-d449-49f2-961d-5067d757e987" name="Changes" comment="SDI-2425-503-11.6-SW Servicio Memoria.">
+    <list default="true" id="4a840a70-d449-49f2-961d-5067d757e987" name="Changes" comment="SDI-2425-503-sesion11-ejercicio-coplementario1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicstoreapp/public/apiclient/widget-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/public/apiclient/widget-add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicstoreapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/musicstoreapp/public/apiclient/widget-songs.html" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/public/apiclient/widget-songs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicstoreapp/routes/api/songsAPIv1.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/musicstoreapp/routes/api/songsAPIv1.0.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -143,7 +145,7 @@
       <workItem from="1742890198677" duration="5597000" />
       <workItem from="1743180067156" duration="140000" />
       <workItem from="1743412268476" duration="16107000" />
-      <workItem from="1743491322261" duration="4073000" />
+      <workItem from="1743491322261" duration="5942000" />
     </task>
     <task id="LOCAL-00001" summary="SDI-2425-503-8.1-Creación del proyecto Tienda Virtual.">
       <option name="closed" value="true" />
@@ -353,14 +355,21 @@
       <option name="project" value="LOCAL" />
       <updated>1743437458482</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="SDI-2425-503-sesion11-ejercicio-coplementario1">
+      <option name="closed" value="true" />
+      <created>1743495474854</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1743495474854</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="SDI-2425-503-8.2-Express, depuración y variables de entorno." />
     <MESSAGE value="SDI-2425-503-8.2-Express, depuración y variables de entorno.(Corregido)" />
     <MESSAGE value="SDI-2425-503-8.3-División de las rutas en módulos, peticiones GET y parámetros." />
     <MESSAGE value="SDI-2425-503-8.4-Recursos estáticos, peticiones POST y parámetros, Enrutamiento y comodines." />
@@ -385,7 +394,8 @@
     <MESSAGE value="SDI-2425-503-11.4-SW Cliente JQuery + AJAX (Ampliaciones)" />
     <MESSAGE value="SDI-2425-503-11.5-SW Consumir SW desde Node.js." />
     <MESSAGE value="SDI-2425-503-11.6-SW Servicio Memoria." />
-    <option name="LAST_COMMIT_MESSAGE" value="SDI-2425-503-11.6-SW Servicio Memoria." />
+    <MESSAGE value="SDI-2425-503-sesion11-ejercicio-coplementario1" />
+    <option name="LAST_COMMIT_MESSAGE" value="SDI-2425-503-sesion11-ejercicio-coplementario1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
